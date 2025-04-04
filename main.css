@@ -225,20 +225,44 @@ footer {
     padding: 20px;
 }
 
-.slides-container{
+.slides-container {
     position: relative;
     overflow: hidden;
+    width: 100%; /* De container vult 100% van de breedte van de viewport */
+    margin: 0 auto;
 }
 
-.slides{
-    transition: transform 0.5s ease-in-out; 
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Dit wordt aangepast via JS, maar je kunt een fallback toevoegen */
 }
 
+.slide {
+    /* flex: 0 0 100%; */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
 
-.left, .right { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; padding: 10px; cursor: pointer; }
-        .left { left: 10px; }
-        .right { right: 10px; }
+.left, .right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
 
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
 
 
 
