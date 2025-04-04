@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <title>Planet clicker</title>
+        <script src="main.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="style-title">
+                <img src="img/spaceship.png" width="100" height="100" alt="spaceship">
+                <h1>Planet Clicker</h1>
+                <img src="img/rocketship.png" width="100" height="100" alt="rocketship">
+            </div>
+            <div class="style-totaal">
+                <h2 class="style-totaalAliens" id="aantal_alliens">Totaal Alliens:</h2>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                        <button class="openPopup" data-popup="stats">Stats</button>
+                            <div class="popup" id="popup-stats">
+                                <div class="popup-center" contenteditable="true" oninput="adjustHeight(this)">
+                                    <img src="img/space.png" class="top-right-img" width="140" height="140" alt="astronaut">
+                                    <h1>Stats</h1>
+                                    <button class="closePopup">Close</button>
+                                </div>
+                            </div>
+                        <button class="openPopup" data-popup="store">Store</button>
+                            <div class="popup" id="popup-store">
+                                <div class="popup-center" oninput="adjustHeight(this)">    
+                                    <img src="img/rocket.png" class="top-right-img-rocket" width="140" height="140" alt="astronaut">    
+                                    <h1>Store</h1>
+                                    <h2>AutoClickStore</h2>
+                                        <div class="slides-container">
+                                            <div class ="slides">
+                                                <div class="slide">
+                                                    <div class="slide-left">
+                                                        <img src="img/monster.png" width="150px" height="150px" alt="alien">
+                                                        <img src="img/1 star.png" width="200" height="50" alt="1star">
+                                                        <button class="openPopup" data-popup="buy">Buy</button> 
+                                                    </div>
+                                                    <div class="slide-right">
+                                                        <h3>Zordon</h3>
+                                                        <p>Zordon kwam uit een verre melkweg en had een nieuwsgierige geest. Hij reisde altijd met zijn ruimteschip vol mysterieuze gadgets en ontdekkingen.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="slide">
+                                                    <div class="slide-left">
+                                                        <img src="img/monster.png" width="150px" height="150px" alt="alien">
+                                                        <img src="img/1 star.png" width="200" height="50" alt="1star">
+                                                        <button class="openPopup" data-popup="buy">Buy</button> 
+                                                    </div>
+                                                    <div class="slide-right">
+                                                        <h3>Zordon</h3>
+                                                        <p>Zordon kwam uit een verre melkweg en had een nieuwsgierige geest. Hij reisde altijd met zijn ruimteschip vol mysterieuze gadgets en ontdekkingen.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="left" onclick="prevSlide()">&#9665;</div>
+                                            <div class="right" onclick="nextSlide()">&#9655;</div>
+                                        </div>
+                                    <button class="closePopup">Close</button>
+                                </div>
+                            </div>
+                        <button class="openPopup" data-popup="info">Info</button>
+                        <div class="popup" id="popup-info">
+                            <div class="popup-center" contenteditable="true" oninput="adjustHeight(this)">
+                                <img src="img/astronaut.png" class="top-right-img" width="120" height="120" alt="astronaut">
+                                <h1>Informatie</h1>
+                                <p>Welkom bij Planet Clicker! In dit spannende spel is het jouw taak om de levende wezens op verschillende planeten te vernietigen. Dit doe je door op de planeten te klikken! Elke klik helpt je om je doel sneller te bereiken, maar maak je geen zorgen: je hebt tal van upgrades tot je beschikking die ervoor zorgen dat je voortgang steeds sneller verloopt.
+                                    Met slimme upgrades kun je je kliks krachtiger maken, nieuwe planeten ontgrendelen en je snelheid verbeteren. Hoe verder je komt, hoe meer mogelijkheden je hebt om je kracht te vergroten. Zet alles op alles om de hoogste scores te behalen en het universum te veroveren! 🌠💥</p>
+                                <button class="closePopup">Close</button>
+                            </div>
+                        </div>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <img onclick="klik()" src="img/planet 1.png" class="rotating-img" alt="planeet">
+            <p>level 1</p>
+        </section>
+    </body>
+        <footer>
+            <button class="openPopup" data-popup="contact">contact</button>
+                        <div class="popup" id="popup-contact">
+                            <div class="popup-center" contenteditable="true" oninput="adjustHeight(this)">
+                                <img src="img/galaxy.png" class="top-right-img" width="145" height="145" alt="galaxy">
+                                <h1>Contact</h1>
+                                <p>Is er een bug op je reis naar de planeet Ter Verover, of wil je me iets vragen? Laat het me weten, ik sta klaar om je te helpen op je avontuur!🚀🌟</p>
+                                <h5>email:
+                                <br>
+                                    9018631@student.zadikine.nl</h5>
+                                <button class="closePopup">Close</button>
+                            </div>
+                        </div>
+        </footer>
+</html>
